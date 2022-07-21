@@ -25,9 +25,7 @@ resource "yandex_compute_instance" "vm-1" {
     nat       = true
   }
 
-  metadata = {
-    ssh-keys = "ubuntu:${file("/home/sergey/.ssh/id_rsa")}"
-  }
+  
 }
 
 
